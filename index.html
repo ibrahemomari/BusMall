@@ -4,11 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <title>BusMall</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <div id="navbar">
+            
+            <ul>
+                <li><i class="fas fa-shopping-cart"></i></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="instruction">
+            <p>
+                Welcome to my website.<br>
+                Please choose one of the products shown below, so that whenever you click on any of the three products, we will display three other products for you, choose one of them again, and so on. <br>
+                You can stop whenever you want or at the end of 25 times it will stop automatically. <br>
+                To see the result, please click on the button ('View Results').
+                
+            </p>
+        </div>
+        <div id="imageContianer">
+            <img id="leftImage" src="" alt="">
+            <img id="middleImage" src="" alt="">
+            <img id="rightImage" src="" alt="">
+        </div>
+        <div id="resultContianer">
+            <div id="resultReport">
+                
+            </div>
+
+            <button id="btnResults">
+                View Results
+            </button>
+        </div>
+    </main>
+    <footer>
+        <span>
+            &copy; Ibrahem Alomari 
+        </span>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
