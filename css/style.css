@@ -131,6 +131,7 @@ footer
 {
     color: white;
     font-size: 20px;
+    text-align: center;
 }
 
 #btnResults {
@@ -147,7 +148,9 @@ footer
 	padding:13px 32px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #3d768a;
-   
+    margin-top: 20px;
+    visibility: hidden;
+    
 }
 #btnResults:hover {
 	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
@@ -157,7 +160,22 @@ footer
 	position:relative;
 	top:1px;
 }
+
+
 footer span
 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#chartContainer
+{
+    padding: 150px;
+    background: rgb(222,180,255);
+    background: linear-gradient(90deg, rgba(222,180,255,1) 0%, rgba(250,217,217,1) 100%);
+}
+#myChart
+{
+    width: 0px;
+    height: 0px;
+    box-shadow: 0 0 8px black;
+    border-radius: 20px;
 }
