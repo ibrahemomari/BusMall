@@ -66,7 +66,7 @@ html,body
     height: 240px;
 }
 
-#instruction
+#instruction ,#FormContainer
 {
     text-align: center;
     color: white;
@@ -74,7 +74,48 @@ html,body
     font-weight: bold;
     font-size: 20px;
 }
+#FormContainer
+{
+   margin-bottom: 20px;
+   
+}
+#FormContainer input[type=number]
+{
+    padding: 6px;
+    font-size: 13px;
+    border-width: 4px;
+    border-color: #d9a7fa;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 11px;
+    box-shadow: -1px 0px 8px rgba(66,66,66,.75);
+    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
 
+}
+#FormContainer input[type=number]:focus
+{
+    outline: none;
+}
+#FormContainer input[type=submit]
+{
+    background: #70d934;
+    background-image: linear-gradient(to bottom, #70d934, #20663e);
+    border-radius: 6px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+#FormContainer input[type=submit]:hover
+{
+    background: #0c6e13;
+    background-image: linear-gradient(to bottom, #0c6e13, #84ad4e);
+    text-decoration: none;
+}
 footer
 {
     width: 100%;

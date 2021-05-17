@@ -4,6 +4,10 @@
 // array to store all products (objects)
 let allProducts=[];
 
+// array have the name of products
+let productsName=['bag','banana','bathroom','boots','breakfast','bubblegum','chair','cthulhu','dog-duck','dragon','pen','pet-sweep','scissors','shark','sweep','tauntaun','unicorn','water-can','wine-glass'];
+
+
 // array to count how many unique image has shown
 let imagesCounter=[];
 
@@ -39,22 +43,17 @@ function Products (name,path,TimeImageShown)
 
 
 }
+for (let i = 0; i < productsName.length; i++) {
+    if (productsName[i]==='sweep') {
+        new Products(productsName[i],`images/${productsName[i]}.png`,0);
+    }else
+    {
+        new Products(productsName[i],`images/${productsName[i]}.jpg`,0);
 
-new Products('bag','../images/bag.jpg',0);
-new Products('banana','../images/banana.jpg',0);
-new Products('bathroom','../images/bathroom.jpg',0);
-new Products('boots','../images/boots.jpg',0);
-new Products('breakfast','../images/breakfast.jpg',0);
-new Products('bubblegum','../images/bubblegum.jpg',0);
-new Products('dog-duck','../images/dog-duck.jpg',0);
-new Products('dragon','../images/dragon.jpg',0);
-new Products('pen','../images/pen.jpg',0);
-new Products('pet-sweep','../images/pet-sweep.jpg',0);
-new Products('scissors','../images/scissors.jpg',0);
-new Products('tauntaun','../images/tauntaun.jpg',0);
-new Products('unicorn','../images/unicorn.jpg',0);
-new Products('water-can','../images/water-can.jpg',0);
-new Products('wine-glass','../images/wine-glass.jpg',0);
+    }
+ 
+}
+
 
 console.log(allProducts);
 
@@ -95,10 +94,23 @@ function renderProducts()
 
 renderProducts();
 
+let imageContainer=document.getElementById('imageContianer');
+imageContainer.addEventListener('click',handleUserClick);
 
-leftImageElement.addEventListener('click',handleUserClick);
-middleImageElement.addEventListener('click',handleUserClick);
-rightImageElement.addEventListener('click',handleUserClick);
+
+let formContainer=document.getElementById('FormContainer');
+let massege=document.getElementById('massege');
+formContainer.addEventListener('submit',roundNumber);
+
+function roundNumber(event)
+{
+    event.preventDefault();
+    maxRound=event.target.round.value;
+
+    massege.textContent='Round Number Saved Seccussfuly'
+
+
+}
 
 function handleUserClick(event) {
 
@@ -117,9 +129,8 @@ function handleUserClick(event) {
             allProducts[rightImage].votes=allProducts[rightImage].votes + 1; 
         }
     }else{
-        leftImageElement.removeEventListener('click', handleUserClick);
-        middleImageElement.removeEventListener('click', handleUserClick);
-        rightImageElement.removeEventListener('click', handleUserClick);
+        imageContianer.removeEventListener('click', handleUserClick);
+        
     }
 
     console.log(userAttempts);
