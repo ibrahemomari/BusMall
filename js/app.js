@@ -27,7 +27,7 @@ rightImageElement=document.getElementById('rightImage');
 let btnResult=document.getElementById('btnResults');
 
 // get the result report container tag
-// let parent=document.getElementById('resultReport');
+let parent=document.getElementById('resultReport1');
 
 // maximum round number (25 round)
 let maxRound=25;
@@ -170,15 +170,15 @@ function showResults(event)
 
 
     
-    // let ul=document.createElement('ul');
+    let ul=document.createElement('ul');
     
-    // parent.appendChild(ul);
-    // for (let i = 0; i < allProducts.length; i++) {
-    //     let li=document.createElement('li');
-    //     ul.appendChild(li);
-    //     li.textContent=`${allProducts[i].name} had ${allProducts[i].votes}, and was seen ${allProducts[i].TimeImageShown} times. `
+    parent.appendChild(ul);
+    for (let i = 0; i < allProducts.length; i++) {
+        let li=document.createElement('li');
+        ul.appendChild(li);
+        li.textContent=`${allProducts[i].name} had ${allProducts[i].votes}, and was seen ${allProducts[i].TimeImageShown} times. `
         
-    // }
+    }
     
     console.log(votesChart);
 console.log(shownImageChart);
