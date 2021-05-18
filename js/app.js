@@ -209,6 +209,18 @@ function showResults(event) {
     updateChart();
     setElement();
     
+
+    let ul=document.createElement('ul');
+    
+    parent.appendChild(ul);
+    for (let i = 0; i < allProducts.length; i++) {
+        let li=document.createElement('li');
+        ul.appendChild(li);
+        li.textContent=`${allProducts[i].name} had ${allProducts[i].votes}, and was seen ${allProducts[i].TimeImageShown} times. `
+        
+    }
+
+
     
 }
 

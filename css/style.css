@@ -127,12 +127,21 @@ footer
 {
     padding: 20px;
 }
+
+#resultContianer #resultReport ,#resultReport1 
+
 #resultContianer #resultReport ,#resultReport1
 {
     color: white;
     font-size: 20px;
     text-align: center;
    
+}
+#resultReport1 ul li
+{
+    color: rgb(175, 185, 238);
+    text-align: left;
+
 }
 
 #resultReport1 ul li
@@ -187,6 +196,7 @@ footer span
     box-shadow: 0 0 8px black;
     border-radius: 20px;
 }
+
 #imgBar
 {
     text-align: center;
@@ -200,3 +210,4 @@ footer span
     border: 2px solid rgb(186, 114, 235);
     
 }
+
