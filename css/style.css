@@ -127,11 +127,17 @@ footer
 {
     padding: 20px;
 }
-#resultContianer #resultReport
+#resultContianer #resultReport ,#resultReport1 
 {
     color: white;
     font-size: 20px;
     text-align: center;
+}
+#resultReport1 ul li
+{
+    color: rgb(175, 185, 238);
+    text-align: left;
+
 }
 
 #btnResults {
