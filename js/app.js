@@ -79,6 +79,29 @@ for (let i = 0; i < productsName.length; i++) {
     
 }
 
+
+new Products('bag','images/bag.jpg',0);
+new Products('banana','images/banana.jpg',0);
+new Products('bathroom','images/bathroom.jpg',0);
+new Products('boots','images/boots.jpg',0);
+new Products('breakfast','images/breakfast.jpg',0);
+new Products('bubblegum','images/bubblegum.jpg',0);
+new Products('dog-duck','images/dog-duck.jpg',0);
+new Products('dragon','images/dragon.jpg',0);
+new Products('pen','images/pen.jpg',0);
+new Products('pet-sweep','images/pet-sweep.jpg',0);
+new Products('scissors','images/scissors.jpg',0);
+new Products('tauntaun','images/tauntaun.jpg',0);
+new Products('unicorn','images/unicorn.jpg',0);
+new Products('water-can','images/water-can.jpg',0);
+new Products('wine-glass','images/wine-glass.jpg',0);
+
+console.log(allProducts);
+
+function randomizeProduct()
+{
+    return Math.floor(Math.random() * allProducts.length);
+
 console.log(imageList);
 
 
@@ -86,6 +109,7 @@ console.log(imageList);
 
 function randomizeProduct() {
     return Math.floor(Math.random() * Products.allProducts.length);
+
 }
 
 function renderProducts() {
